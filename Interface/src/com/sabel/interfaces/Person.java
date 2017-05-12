@@ -72,7 +72,7 @@ public class Person implements Comparable<Person>{
 		personen.add(new Person("Hugo", 33));
 		personen.add(new Person("Karl", 22));
 		personen.add(new Person("Heinz", 20));
-		personen.add(new Person("Sepp", 11));
+		personen.add(new Person("Heinz", 11));
 		personen.add(new Person("Evi", 17));
 		personen.add(new Person("Anna", 15));
 		personen.add(new Person("Emma", 18));
@@ -97,7 +97,13 @@ public class Person implements Comparable<Person>{
 
 	@Override
 	public int compareTo(Person o) {
-		return this.alter - o.alter;
+		// return this.alter - o.alter;
+		int retval = this.name.compareToIgnoreCase(o.name);
+		if (retval == 0) {
+			 retval = this.alter - o.alter;
+		}
+		return retval;
 	}
+	
 	
 }
