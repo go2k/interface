@@ -60,10 +60,9 @@ public class Parkplatz {
 	}
 	
 	/**
-	 * Parkt die Autos nach ihrer PS aufsteigend
+	 * Parkt die Autos nach xxx aufsteigend
 	 */
-	public void umparken(Comparator<Auto> c) {
-		
+	public void umparken(Comparator<Auto> c) {		
 		Collections.sort(autos, c);
 	}
 
