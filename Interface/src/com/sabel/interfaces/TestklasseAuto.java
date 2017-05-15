@@ -51,11 +51,11 @@ public class TestklasseAuto {
 
 			@Override
 			public int compare(Auto o1, Auto o2) {
-				// TODO Auto-generated method stub
 				return o1.getPs() - o2.getPs();
 			}
 			
 		});
+		
 		
 		System.out.println(pp.toString());
 	}

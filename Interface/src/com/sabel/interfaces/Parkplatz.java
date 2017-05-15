@@ -73,9 +73,6 @@ public class Parkplatz {
 			ausgabe = ausgabe + auto.getKennzeichen() + "\t" + auto.getPs() + " ps \n";
 		}
 		return ausgabe;
-
 	}
-	
-	
 	
 }

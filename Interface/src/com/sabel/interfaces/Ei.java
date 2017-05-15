@@ -1,6 +1,5 @@
 package com.sabel.interfaces;
 
-import javax.crypto.spec.GCMParameterSpec;
 
 public class Ei extends Einkaufsgegenstand implements Essbar {
 
